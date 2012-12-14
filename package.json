@@ -1,16 +1,16 @@
 {
-  "name": "geotest",
-  "subdomain": "geotest",
-  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "name": "Geotracker",
+  "version": "0.0.3-1",
   "scripts": {
     "start": "server.js"
   },
-  "version": "0.0.3-1",
-  "engines": {
-    "node": "0.8.x"
-  },
   "dependencies": {
-    "socket.io": "0.9.10",
-    "node-static": "*"
+    "socket.io": "*",
+    "node-static": "*",
+    "mysql": "2.0.0-alpha4",
+    "node-http-proxy": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
   }
 }
