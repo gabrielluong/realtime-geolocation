@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; border: 0; }
+/** { margin: 0; padding: 0; border: 0; }*/
 
 body {
 	background: url('../assets/grey.png') #f2f2f2;
@@ -14,7 +14,7 @@ header {
 
 h1 {
 	font-size: 30px;
-	font-weight: 400;	
+	font-weight: 400;
 }
 
 .description {

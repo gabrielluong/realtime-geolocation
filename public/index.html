@@ -1,33 +1,40 @@
-<!doctype html>
-<html>
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Dmitri Voronianski">
-	<title>Real-Time Geolocation Service with Node.js</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+    <meta charset="UTF-8">
+    <title>Geotracker</title>
 
-	<!--[if lt IE 9]>
-		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/css/leaflet.ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="./js/lib/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
-	<div class="wrapper">
-	  <header>
-	  	<h1>Real-Time Geolocation Service with Node.js</h1>
-	  	<div class="description">Using the HTML5 Geolocation API and Web Sockets to show the locations of visitors in real-time.</div>
-	  </header>
-
+    <div class="wrapper">
+    <div>
+        <button id="btnInit">Track</button>
+        <button id="btnStop">Stop</button>
+    </div>
 	  <div class="app">
-	  	<div id="infobox" class="infobox"></div>
-	  	<div id="map">To get this app to work you need to share your geolocation.</div>
-	  </div>
-	</div>
+	  	<div id="infobox" class="infobox"></div> <!-- infobox -->
+	  	<div id="map"></div> <!-- map -->
+	  </div> <!-- app -->
+	</div> <!-- wrapper -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	<script src="./js/lib/leaflet.js"></script>
-	<script src="/socket.io/socket.io.js"></script>
-	<script src="./js/application.js"></script>
+    <!-- Scripts
+  ================================================== -->
+    <script src="/js/lib/jquery-1.8.2.min.js"></script>
+    <script src="/js/lib/leaflet.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/application.js"></script>
 </body>
 </html>
